@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>pagination</title>
+    <link rel="stylesheet" href="pagination.css">
+</head>
+<body>
+<ol id="pageList"></ol>
+<script src="../pagination.js"></script>
+<script>
+    new Pagination('#pageList', {
+        curr: 1,
+        limit: 20,
+        count: 100,
+        callback: function (obj) {
+            console.info(obj);
+        }
+    });
+</script>
+</body>
+</html>
